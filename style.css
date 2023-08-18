@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    background-color: hsl(30, 38%, 92%);
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container{
+    width: 600px;
+    display: flex;
+    border-radius: 20px;
+    background-color: #fff;
+}
+.col-1{
+    flex: 1;
+}
+.col-2{
+    flex: 1;
+    border-radius: 0px 10px 10px 0px;
+}
+.sub-col{
+    width: 80%;
+    margin-left: 30px;
+    margin-right: 30px;
+    height: 100%;
+}
+.product-img{
+    width: 300px;
+    border-radius: 10px 0px 0px 10px;
+}
+.product-name{
+    color: hsl(228, 12%, 48%);
+    letter-spacing: 4px;
+    font-size: 12px;
+    margin-top: 1.8rem;
+    margin-bottom: 1.5rem;
+}
+.section-header{
+    color: hsl(212, 21%, 14%);
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    font-size: 35px;
+    font-family: 'Fraunces', serif;
+    line-height: 35px;
+}
+.product-description{
+    color: hsl(228, 12%, 48%);
+    font-size: 14px;
+    line-height: 1.4rem;
+    font-weight: 500;
+}
+.discounted-price{
+    font-size: 30px;
+    font-family: 'Fraunces';
+    color: hsl(158, 36%, 37%);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+.sub-text{
+    color: hsl(228, 12%, 48%);
+    font-size: 14px;
+    margin-left: 1.8rem;
+}
+.green-button{
+    background-color: hsl(158, 36%, 37%);
+    color: #fff;
+    margin-top: 0px;
+    border: none;
+    border-radius: 10px;
+    padding: 1rem;
+    width: 100%;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: 700;
+}
+.green-button:hover{
+    background-color: hsl(159, 74%, 15%);
+}
+.cart-svg{
+    margin-right: 0.5rem;
+}
+@media screen and (max-width: 375px){
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .col-1{
+        margin-bottom: 0px;
+    }
+    .col-2{
+        border-radius: 0px 0px 10px 10px;
+    }
+    .product-img{
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        border-radius: 10px 10px 0px 0px;
+    }
+    .green-button{
+        margin-bottom: 1.5rem;
+    }
+}
